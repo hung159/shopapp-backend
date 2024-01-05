@@ -11,6 +11,7 @@ import lombok.*;
 @NoArgsConstructor
 @Builder
 public class ProductImageDTO {
+    public static final int MAXIMUM_IMAGES_PER_PRODUCT = 5;
     @JsonProperty("product_id")
     @Min(value = 1, message = "Product's ID must be > 0")
     private Long productId;
